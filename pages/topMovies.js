@@ -14,13 +14,11 @@ const TopMovies = () => {
       .then(error => console.log(error))
       .then(() => setLoading(false))
   }, [page])
-  console.log(movies)
   // render movies
+  console.log(movies)
   
   const renderMovies = movies.map((movie => 
-     <li role='button' onClick={
-        () => showMovieDetails(movie)
-     } className='m-10 w-5/6 mx-auto max-w-[500px] rounded-md'> 
+     <li className='m-10 w-5/6 mx-auto max-w-[500px] rounded-md'> 
      {/* <a href={movie.}></a> */}
         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
         <h1 className='mt-4'>{movie.title}</h1>

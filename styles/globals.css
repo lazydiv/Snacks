@@ -31,6 +31,14 @@ body::-webkit-scrollbar {
   h3 {
     @apply text-lg;
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 
