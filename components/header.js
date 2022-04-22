@@ -3,7 +3,7 @@ import List from './Menu'
 
 const Header = () => {
     return (
-        <header className='sticky inline-flex top-0 h-16 w-full bg-black bg-opacity-20'>
+        <header className='sticky inline-flex backdrop-blur-md top-0 h-16 border-b border-mainBlack w-full bg-black bg-opacity-20'>
             <div className='mx-5 items-center h-full w-full text-2xl flex '>
                 <List className=''/>
                 <p className='p-2 ml-5 rounded-md text-mainBlack bg-mainYellow'>Snacks</p>  
