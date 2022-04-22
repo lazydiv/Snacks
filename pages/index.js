@@ -30,25 +30,19 @@ const Home = () => {
     <div>
       <div className='inline-flex'>
         <p className='text-3xl   mt-14 ml-10 border-b-4 border-mainLightGray w-24 pb-2'>Home</p>
-        {/* drop down */}
-        
-           <select name='Week' className='bg-white bg-opacity-10 rounded-md px-3 ml-14  mt-14 float-right h-12 outline-none'> 
-              <option value='Week' className='bg-transparent'>Week</option>
-              <option value='Day' className='bg-transparent'>Day</option>
-           </select>
-        
       </div>
+
       <ul className='grid w-full max-w-[2160px] mx-auto mt-20
     grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
     md:w-5/6'>
         {renderMovies}
       </ul>
       <div className='flex'>
-      <div className='inline-flex m-10 justify-between mx-auto text-xl  w-20'>
-        <button>{'<'}</button>
-        <p>1</p>
-        <button>{'>'}</button>
-      </div>
+        <div className='inline-flex m-10 justify-between mx-auto text-xl  w-20'>
+          <button>{'<'}</button>
+          <p>1</p>
+          <button>{'>'}</button>
+        </div>
       </div>
     </div>
   )

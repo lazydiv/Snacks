@@ -11,7 +11,10 @@ const Header = () => {
                     <input type="text" className='w-full invisible md:visible outline-none  p-2 items-center bg-mainLightGray opacity-20 focus:opacity-100 rounded-md text-mainBlack' placeholder='type here ...'/>
                 </div>
                 <i className='bi-search  mr-5 visible md:invisible float-right'/>
+                <a href="https://github.com/lazydiv/Snacks">
+
                 <i className='bi-github float-right mr-5 text-3xl'/>
+                </a>
             </div>
         </header>
     )
