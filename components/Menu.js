@@ -8,7 +8,7 @@ const List = () => {
     <Menu.Button>
       <i className='bi-list text-2xl' />
     </Menu.Button> 
-    <Menu.Items className='absolute flex-col items-center top-0 z-50 left-0 w-screen h-screen bg-mainBlack'>
+    <Menu.Items className='absolute flex-col items-center top-0 z-50 left-0 w-full h-screen bg-mainBlack'>
       <Menu.Button>
         <i className='bi-x-lg  flex p-5  text-2xl' />
       </Menu.Button>

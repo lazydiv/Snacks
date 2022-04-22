@@ -12,7 +12,6 @@ const SearchList = () => {
             setLoading(true)
             fetch(`https://api.themoviedb.org/3/search/multi?api_key=8319cba0d367c9ab60f985d626f4cc9b&language=en-US&query=${searchValue}&page=1&include_adult=true`)
               .then(response => response.json())
-              .then(window.scrollTo(0, 0))
               .then(data => setSearchResults(data.results))
               .then(error => console.log(error))
               .then(() => setLoading(false))
@@ -29,17 +28,19 @@ const SearchList = () => {
           
         const renderSearchResults = searchResults.map((result =>
             <li className='border-b  border-mainBlack border-opacity-20  w-5/6 mx-auto'>
+                <a href={`https://youtube.com/results?search_query=${result.title || result.name}+trailer`}>
                 <div className='inline-flex pb-5 mt-5 items-center'>
                     
                 <img src={`https://image.tmdb.org/t/p/w500${result.poster_path}`} className='h-14 mr-5'/>
                 <h1 className=''>{result.title}{result.name}</h1>
                 </div>
+                </a>
             </li>
         ))
   return (
-        <div className='absolute mt-20 w-full'>
+        <div className='absolute mt-36  md:mt-20 w-full'>
             <div className='w-full md:w-3/6   mx-auto'>
-                <ul className='no-scrollbar w-full flex-col overflow-y-scroll bg-opacity-20 max-h-96 bg-white rounded-md'>
+                <ul className='no-scrollbar w-full flex-col overflow-y-scroll backdrop-blur-md bg-opacity-20 max-h-96 bg-white rounded-md'>
                    {renderSearchResults}
                 </ul>
             </div>
