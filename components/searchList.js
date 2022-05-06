@@ -39,7 +39,7 @@ const SearchList = () => {
         ))
   return (
         <div className='absolute mt-36  md:mt-20 w-full'>
-            <div className='w-full md:w-3/6   mx-auto'>
+            <div className='w-[90%] md:w-3/6   mx-auto'>
                 <ul className='no-scrollbar w-full flex-col overflow-y-scroll backdrop-blur-md bg-opacity-20 max-h-96 bg-white rounded-md'>
                    {renderSearchResults}
                 </ul>

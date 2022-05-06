@@ -20,7 +20,7 @@ const TopMovies = () => {
   const renderMovies = movies.map((movie => 
      <li className='m-10 w-5/6 mx-auto max-w-[500px] rounded-md'> 
      {/* <a href={movie.}></a> */}
-     <a href={`https://youtube.com/results?search_query=${movie.title || movie.name}+trailer`}>
+     <a href={`https://youtube.com/results?search_query=${movie.title || movie.name}+trailer`} target='_blank'>
         <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
         <h1 className='mt-4'>{movie.title}</h1>
         <p className='text-sm mt-2'>{movie.overview}</p>
